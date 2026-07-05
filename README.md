@@ -157,4 +157,4 @@ Do not upload:
 
 ## Status
 
-The project is ready for final Unity testing, GitHub upload, design document export, and Windows build testing.
+The project is ready for final Unity testing, design document export, and Windows build testing.
