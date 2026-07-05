@@ -1,14 +1,19 @@
 # Safe Road Hero
 
-Safe Road Hero is a simple Unity 3D road safety awareness game created for a semester Game Jam final lab project. The project is based on the social issue theme of road safety. The main message is that road signs and safe driving decisions help prevent accidents.
+Safe Road Hero is a Unity 3D road safety awareness game developed by Moeen Ahmad for a semester Game Jam final lab project. The game focuses on the social issue theme of road safety and teaches that road signs and safe driving decisions help prevent accidents.
 
-## Repository Name
+## Developer
 
-Recommended GitHub repo name:
+- Moeen Ahmad (Student)
+- Sir Behram Khan (Instructor)
 
-`safe-road-hero-unity`
+## Repository
 
-Short repo description:
+Repository name:
+
+`Safe-Road-Hero-Unity-Game`
+
+Repository description:
 
 `Unity 3D semester Game Jam project about road safety awareness, safe driving decisions, road signs, level completion, game over flow, and a basic quiz scene.`
 
@@ -16,25 +21,25 @@ Short repo description:
 
 - Main theme: Social Issue
 - Topic: Road Safety Awareness
-- Engine: Unity only
+- Engine: Unity
 - Project type: 3D game
 - Team size: Individual project
 
-## Gameplay
+## Gameplay Overview
 
-The player drives a car through short road safety levels. Each level teaches one simple road safety topic:
+The player drives a car through short road safety levels. Each level teaches one simple safety topic:
 
 - Level 1: Speed limit safety
 - Level 2: Turn sign safety
 - Level 3: Traffic light safety
 - Level 4: No U-turn safety
 
-The player must drive safely, avoid road cones, control speed in safety zones, and reach the end line. The game also includes a Safety Quiz scene for basic road sign knowledge.
+The player must drive safely, avoid cones, control speed in safety zones, and reach the end line. The game also includes a Safety Quiz scene for basic road sign knowledge.
 
 ## Main Flow
 
 ```text
-MainMenu -> Start Drive -> Level 1 -> Level 2 -> Level 3 -> Level 4 -> MainMenu
+MainMenu -> Start -> Level 1 -> Level 2 -> Level 3 -> Level 4 -> MainMenu
 ```
 
 Quiz flow:
@@ -68,20 +73,32 @@ MainMenu -> Safety Quiz -> MainMenu
 
 Unity 2022.3.62f3
 
-Open the `Project` folder in Unity Hub.
+## Repository Folder Structure
+
+This repository is uploaded as the Unity project root. Open this repository folder directly in Unity Hub.
+
+Important folders:
+
+- `Assets/` - scenes, scripts, UI, car, road signs, models, audio, and gameplay assets.
+- `Packages/` - Unity package manifest and package lock files.
+- `ProjectSettings/` - Unity project settings and build settings.
+- `GSD/TH/` - road/terrain data used by the project.
+- `DOCUMENTATION/` - design document and lab preparation notes, if included.
+
+Unity may also generate files such as `.csproj`, `.sln`, `Logs/`, and `Library/`.
 
 ## Important Scenes
 
-The active scenes are:
+The active scenes are in `Assets/Scenes/`:
 
-1. `Project/Assets/Scenes/MainMenu.unity`
-2. `Project/Assets/Scenes/Level 1.unity`
-3. `Project/Assets/Scenes/Level 2.unity`
-4. `Project/Assets/Scenes/Level 3.unity`
-5. `Project/Assets/Scenes/Level 4.unity`
-6. `Project/Assets/Scenes/quiz game.unity`
+1. `MainMenu.unity`
+2. `Level 1.unity`
+3. `Level 2.unity`
+4. `Level 3.unity`
+5. `Level 4.unity`
+6. `quiz game.unity`
 
-These scenes should be enabled in Build Settings in the same order.
+These scenes should be enabled in Unity Build Settings in the same order.
 
 ## Main Scripts
 
@@ -93,14 +110,15 @@ These scenes should be enabled in Build Settings in the same order.
 - `UI.cs` - runtime-safe scene loading and reset helper.
 - `ScriptQuizManger.cs` - optional quiz manager with safety checks.
 
-## How To Open
+## How To Open The Project
 
 1. Clone or download this repository.
 2. Open Unity Hub.
 3. Click Add/Open.
-4. Select the `Project` folder.
-5. Open `Assets/Scenes/MainMenu.unity`.
-6. Press Play.
+4. Select the repository folder `Safe-Road-Hero-Unity-Game`.
+5. Wait for Unity to import assets.
+6. Open `Assets/Scenes/MainMenu.unity`.
+7. Press Play.
 
 ## How To Build For Windows
 
@@ -112,49 +130,67 @@ These scenes should be enabled in Build Settings in the same order.
 6. Click Build.
 7. Save the build in a separate folder outside the Unity project folder.
 
-## Submission Documents
+## Documentation
 
-The required design document and preparation notes are in `DOCUMENTATION/`.
+The main Game Design Document is included in Markdown format.
 
-- `GAME_DESIGN_DOCUMENT.md`
-- `GAME_DESIGN_DOCUMENT.docx`
-- `TECHNICAL_EXPLANATION.md`
-- `LAB_PRESENTATION_NOTES.md`
-- `FINAL_PROJECT_REPORT.md`
-- `SUBMISSION_CHECKLIST.md`
+Use these files for review and lab preparation:
 
-Before final submission, add your GitHub repository link and screenshots to the Game Design Document. A Word version is already available as `DOCUMENTATION/GAME_DESIGN_DOCUMENT.docx`.
+- `DOCUMENTATION/GAME_DESIGN_DOCUMENT.md`
+- `DOCUMENTATION/TECHNICAL_EXPLANATION.md`
+- `DOCUMENTATION/LAB_PRESENTATION_NOTES.md`
+- `DOCUMENTATION/FINAL_PROJECT_REPORT.md`
+- `DOCUMENTATION/SUBMISSION_CHECKLIST.md`
 
-## What To Upload To GitHub
+Before final submission, add:
 
-Upload:
+- GitHub repository link
+- Main Menu screenshot
+- Gameplay screenshot
+- Game Over screenshot
+- Level Complete screenshot
+- Quiz screenshot
 
+## What Should Be Uploaded To GitHub
+
+Required:
+
+- `Assets/`
+- `Packages/`
+- `ProjectSettings/`
+- `GSD/TH/`
 - `README.md`
-- `.gitignore`
-- `DOCUMENTATION/`
-- `Project/Assets/`
-- `Project/GSD/`
-- `Project/Packages/`
-- `Project/ProjectSettings/`
+- `DOCUMENTATION/` if available
 
-Keep all Unity `.meta` files. Unity uses them to preserve asset references.
+Optional but not required:
+
+- `.csproj` files
+- `.sln` file
+- `Logs/`
 
 Do not upload:
 
-- `Project/Library/`
-- `Project/Temp/`
-- `Project/Obj/`
-- `Project/Logs/`
-- `Project/UserSettings/`
-- build output folders
+- `Library/`
+- `Temp/`
+- `Obj/`
+- `Build/`
+- `Builds/`
+- `UserSettings/`
 - `.DS_Store`
-- Visual Studio/Rider generated files
 
-## Team
+Keep all Unity `.meta` files because Unity needs them for asset references.
 
-- Moeen Ahmad (Student)
-- Sir Behram Khan (Instructor)
+## Lab Exam Preparation
 
-## Status
+Be ready to explain:
 
-The project is ready for final Unity testing, GitHub upload, design document export, and Windows build testing.
+- Why road safety was selected as the social issue.
+- How the car movement works.
+- How the Game Over condition works.
+- How the End Line completion works.
+- How Main Menu and scene navigation work.
+- How the quiz scene supports road sign learning.
+
+## Project Status
+
+Safe Road Hero is ready for final Unity testing, GitHub submission, design document submission, and Windows build testing.
