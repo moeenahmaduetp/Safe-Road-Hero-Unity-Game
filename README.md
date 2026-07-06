@@ -73,7 +73,6 @@ Important folders:
 - `Packages/` - Unity package manifest and package lock files.
 - `ProjectSettings/` - Unity project settings and build settings.
 - `GSD/TH/` - road/terrain data used by the project.
-- `DOCUMENTATION/` - design document and lab preparation notes, if included.
 
 Unity may also generate files such as `.csproj`, `.sln`, `Logs/`, and `Library/`.
 
@@ -110,66 +109,6 @@ These scenes should be enabled in Unity Build Settings in the same order.
 6. Open `Assets/Scenes/MainMenu.unity`.
 7. Press Play.
 
-## How To Build For Windows
-
-1. Open the project in Unity.
-2. Go to File -> Build Settings.
-3. Select PC, Mac & Linux Standalone.
-4. Set Target Platform to Windows.
-5. Make sure the six main scenes are enabled.
-6. Click Build.
-7. Save the build in a separate folder outside the Unity project folder.
-
-## Documentation
-
-The main Game Design Document is included in Markdown format.
-
-Use these files for review and lab preparation:
-
-- `DOCUMENTATION/GAME_DESIGN_DOCUMENT.md`
-- `DOCUMENTATION/TECHNICAL_EXPLANATION.md`
-- `DOCUMENTATION/LAB_PRESENTATION_NOTES.md`
-- `DOCUMENTATION/FINAL_PROJECT_REPORT.md`
-- `DOCUMENTATION/SUBMISSION_CHECKLIST.md`
-
-Before final submission, add:
-
-- GitHub repository link
-- Main Menu screenshot
-- Gameplay screenshot
-- Game Over screenshot
-- Level Complete screenshot
-- Quiz screenshot
-
-## What Should Be Uploaded To GitHub
-
-Required:
-
-- `Assets/`
-- `Packages/`
-- `ProjectSettings/`
-- `GSD/TH/`
-- `README.md`
-- `DOCUMENTATION/` if available
-
-Optional but not required:
-
-- `.csproj` files
-- `.sln` file
-- `Logs/`
-
-Do not upload:
-
-- `Library/`
-- `Temp/`
-- `Obj/`
-- `Build/`
-- `Builds/`
-- `UserSettings/`
-- `.DS_Store`
-
-Keep all Unity `.meta` files because Unity needs them for asset references.
-
 ## Project Status
 
-Safe Road Hero is ready for final Unity testing, GitHub submission, design document submission, and Windows build testing.
+Safe Road Hero is ready for final Unity testing, design document submission, and Windows/MacOS build testing.
