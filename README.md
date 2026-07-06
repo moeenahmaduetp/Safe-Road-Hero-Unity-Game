@@ -7,16 +7,6 @@ Safe Road Hero is a Unity 3D road safety awareness game developed by Moeen Ahmad
 - Moeen Ahmad (Student)
 - Sir Behram Khan (Instructor)
 
-## Repository
-
-Repository name:
-
-`Safe-Road-Hero-Unity-Game`
-
-Repository description:
-
-`Unity 3D semester Game Jam project about road safety awareness, safe driving decisions, road signs, level completion, game over flow, and a basic quiz scene.`
-
 ## Theme
 
 - Main theme: Social Issue
@@ -179,17 +169,6 @@ Do not upload:
 - `.DS_Store`
 
 Keep all Unity `.meta` files because Unity needs them for asset references.
-
-## Lab Exam Preparation
-
-Be ready to explain:
-
-- Why road safety was selected as the social issue.
-- How the car movement works.
-- How the Game Over condition works.
-- How the End Line completion works.
-- How Main Menu and scene navigation work.
-- How the quiz scene supports road sign learning.
 
 ## Project Status
 
